@@ -18,7 +18,7 @@
         </div>
         <div class="offcanvas-body">
             <div>
-                <form action="add_product.php" method="POST">
+                <form action="../controllers/createProduct.php" method="POST">
                     <div class="mb-3">
                         <label for="productName" class="form-label">Product Name</label>
                         <input type="text" class="form-control" id="produc_tName" name="produc_tName" required>
@@ -78,8 +78,8 @@
                         <?- $fetch['product_typo'] ?>
                     </td>
                     <td>
-                        <a class="btn btn-outline-danger btn-sm" href="delete.php?ids=<?= $id; ?>">Delete</a>
-                        <a class="btn btn-outline-primary btn-sm" href="delete.php?ids=<?= $id; ?>">Edit</a>
+                        <a class="btn btn-outline-danger btn-sm" href="../controllers/deleteProductController.php?=ids<?= $id; ?>">Delete</a>
+                        <a class="btn btn-outline-primary btn-sm" href="../controllers/deleteProductController.php?=ids<?= $id; ?>">Edit</a>
                     </td>
                 </tr>
                 <?php

@@ -22,7 +22,7 @@
             <h5>Login</h5>
             </div>
             <div class="card-body">
-                <form action="" method="post">
+                <form action="./controllers/loginControllers.php" method="post">
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" name="usernmea" id="floatingInput"
                             placeholder="Username">
