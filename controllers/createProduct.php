@@ -1,6 +1,9 @@
 <?php
     include_once './components/connection.php';
 
+    echo "Yehey another error!";
+    die();
+
     if(isset($_GET['create_product'])){
         $product_name = $_GET['product_name'];
         $product_price = $_POST['product_price'];
@@ -16,4 +19,7 @@
         }else{
             echo "Error ka";
         }
+    }else{
+        echo "uyy error napd";
+        die();
     }
